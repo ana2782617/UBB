@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <style>
+            table,td,tr{
+                border:1px solid black;
+            }
+            form,input{
+                display:inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            Insert an array of numbers like this: 1 2 3 4 5
+        </div>
+        <form name="InputArray" onsubmit="return false">
+            <input type="text" name="Input">
+            <input type="submit" name="Submit" value="Ok!" onclick="createTable()">
+        </form>
+            
+
+
+        <table id="table">
+            
+        </table>
+        <script type="text/javascript">
+            function createTable(){
+                //clear table
+                var table=document.getElementById("table");
+                table.innerHTML="";
+                //read from input
+                inputForm=document.InputArray;
+                input=inputForm.Input.value;
+                //create array of numbers
+                var arrStr=input.split(" ");
+                var arr = [];
+                arrStr.forEach(element => {
+                    arr.push(parseInt(element));
+                });
+                //sort array
+                arr.sort(
+                    function(a,b)
+                    {return a>b;}
+                );
+                var l=0;
+                //place array in table
+                for(i=0;i<arr.length/5;i++){
+                    var table=document.getElementById("table");
+                    var row=table.insertRow(i);
+                    for(j=0;j<5;j++){
+                        var cell=row.insertCell(j);
+                        cell.innerHTML=arr[l++].toString();
+                    }
+
+                }
+            }
+            
+
+        </script>
+        
+    </body>
+</html>
