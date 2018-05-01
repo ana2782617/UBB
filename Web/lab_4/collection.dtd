@@ -1,7 +1,0 @@
-<!ELEMENT collection (album+)>
-<!ELEMENT album (title,artist+,year)>
-<!ELEMENT title (#PCDATA)>
-<!ELEMENT artist (#PCDATA)>
-<!ELEMENT year (#PCDATA)>
-
-<!ATTLIST album type CDATA #REQUIRED>
