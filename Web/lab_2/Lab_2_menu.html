@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            ul{
+                list-style-type: none;
+                margin-right:100px;
+            }
+            ul.a li{
+                width: 500px;
+                background-color: rgba(141, 178, 247, 0.568);
+                border-radius: 2px;
+                color:rgba(128, 0, 128,0.1);
+                text-shadow:0 0 5px rgba(0,0,0,0.3);
+                /*opacity:0.5;*/
+                font-size:50px;
+                /*transition:  opacity 3s;*/
+                transition:color 3s;
+                transition:text-shadow 3s;
+                transition: font-size 3s;
+                text-align: center;
+                transition: all 3s;
+                
+            }
+            ul.a li:hover{
+                color:rgba(128, 0, 128,1);
+                text-shadow:1 1 1px rgba(0,0,0,1);
+                font-size:100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="menu">
+            <ul>
+                <li><h2>Menu</h2>
+                    <ul class="a">
+                        <li>Text item 1</li>
+                        <li>Text item 2</li>
+                        <li>Text item 3</li>
+                        <li>Text item 4</li>
+                        <li>Text item 5</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
