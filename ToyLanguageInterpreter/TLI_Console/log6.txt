@@ -1,0 +1,135 @@
+-------------------------------
+Prog State - 6: 
+Exe stack:
+openRfile( var_f, test.in) 
+( readFile( var_f+2, var_c) ; ( print(var_c) ; ( if (var_c) then (( readFile( var_f, var_c) ; print(var_c) )) else (print(0) ); closeRfile(var_f) )))
+
+Symbol Table:
+
+Output:
+
+File Table:
+
+Heap:
+
+-------------------------------
+Prog State - 6: 
+Exe stack:
+( readFile( var_f+2, var_c) ; ( print(var_c) ; ( if (var_c) then (( readFile( var_f, var_c) ; print(var_c) )) else (print(0) ); closeRfile(var_f) )))
+
+Symbol Table:
+var_f-->0
+
+Output:
+
+File Table:
+0-->test.in
+
+Heap:
+
+-------------------------------
+Prog State - 6: 
+Exe stack:
+readFile( var_f+2, var_c) 
+( print(var_c) ; ( if (var_c) then (( readFile( var_f, var_c) ; print(var_c) )) else (print(0) ); closeRfile(var_f) ))
+
+Symbol Table:
+var_f-->0
+
+Output:
+
+File Table:
+0-->test.in
+
+Heap:
+
+-------------------------------
+Prog State - 6: 
+Exe stack:
+( print(var_c) ; ( if (var_c) then (( readFile( var_f, var_c) ; print(var_c) )) else (print(0) ); closeRfile(var_f) ))
+
+Symbol Table:
+var_f-->0
+
+Output:
+
+File Table:
+0-->test.in
+
+Heap:
+
+-------------------------------
+Prog State - 6: 
+Exe stack:
+print(var_c) 
+( if (var_c) then (( readFile( var_f, var_c) ; print(var_c) )) else (print(0) ); closeRfile(var_f) )
+
+Symbol Table:
+var_f-->0
+
+Output:
+
+File Table:
+0-->test.in
+
+Heap:
+
+-------------------------------
+Prog State - 6: 
+Exe stack:
+( if (var_c) then (( readFile( var_f, var_c) ; print(var_c) )) else (print(0) ); closeRfile(var_f) )
+
+Symbol Table:
+var_f-->0
+
+Output:
+
+File Table:
+0-->test.in
+
+Heap:
+
+-------------------------------
+Prog State - 6: 
+Exe stack:
+if (var_c) then (( readFile( var_f, var_c) ; print(var_c) )) else (print(0) )
+closeRfile(var_f) 
+
+Symbol Table:
+var_f-->0
+
+Output:
+
+File Table:
+0-->test.in
+
+Heap:
+
+-------------------------------
+Prog State - 6: 
+Exe stack:
+closeRfile(var_f) 
+
+Symbol Table:
+var_f-->0
+
+Output:
+
+File Table:
+0-->test.in
+
+Heap:
+
+-------------------------------
+Prog State - 6: 
+Exe stack:
+
+Symbol Table:
+var_f-->0
+
+Output:
+
+File Table:
+
+Heap:
+

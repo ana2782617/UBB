@@ -1,0 +1,42 @@
+-------------------------------
+Prog State - 1: 
+Exe stack:
+v = 2
+print(v) 
+
+Symbol Table:
+
+Output:
+
+File Table:
+
+Heap:
+
+-------------------------------
+Prog State - 1: 
+Exe stack:
+print(v) 
+
+Symbol Table:
+v-->2
+
+Output:
+
+File Table:
+
+Heap:
+
+-------------------------------
+Prog State - 1: 
+Exe stack:
+
+Symbol Table:
+v-->2
+
+Output:
+2
+
+File Table:
+
+Heap:
+

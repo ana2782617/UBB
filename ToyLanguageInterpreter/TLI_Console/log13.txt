@@ -1,0 +1,287 @@
+-------------------------------
+Prog State - 13: 
+Exe stack:
+v = 10
+( new(a, 22); ( fork(( wh(a,30); ( v = 32; ( print(v) ; print(rH(a)) )))); ( print(v) ; print(rH(a)) )))
+
+Symbol Table:
+
+Output:
+
+File Table:
+
+Heap:
+
+-------------------------------
+Prog State - 13: 
+Exe stack:
+( new(a, 22); ( fork(( wh(a,30); ( v = 32; ( print(v) ; print(rH(a)) )))); ( print(v) ; print(rH(a)) )))
+
+Symbol Table:
+v-->10
+
+Output:
+
+File Table:
+
+Heap:
+
+-------------------------------
+Prog State - 13: 
+Exe stack:
+new(a, 22)
+( fork(( wh(a,30); ( v = 32; ( print(v) ; print(rH(a)) )))); ( print(v) ; print(rH(a)) ))
+
+Symbol Table:
+v-->10
+
+Output:
+
+File Table:
+
+Heap:
+
+-------------------------------
+Prog State - 13: 
+Exe stack:
+( fork(( wh(a,30); ( v = 32; ( print(v) ; print(rH(a)) )))); ( print(v) ; print(rH(a)) ))
+
+Symbol Table:
+a-->1
+v-->10
+
+Output:
+
+File Table:
+
+Heap:
+1->22
+
+-------------------------------
+Prog State - 13: 
+Exe stack:
+fork(( wh(a,30); ( v = 32; ( print(v) ; print(rH(a)) ))))
+( print(v) ; print(rH(a)) )
+
+Symbol Table:
+a-->1
+v-->10
+
+Output:
+
+File Table:
+
+Heap:
+1->22
+
+-------------------------------
+Prog State - 13: 
+Exe stack:
+( print(v) ; print(rH(a)) )
+
+Symbol Table:
+a-->1
+v-->10
+
+Output:
+
+File Table:
+
+Heap:
+1->22
+
+-------------------------------
+Prog State - 130: 
+Exe stack:
+( wh(a,30); ( v = 32; ( print(v) ; print(rH(a)) )))
+
+Symbol Table:
+a-->1
+v-->10
+
+Output:
+
+File Table:
+
+Heap:
+1->22
+
+-------------------------------
+Prog State - 13: 
+Exe stack:
+print(v) 
+print(rH(a)) 
+
+Symbol Table:
+a-->1
+v-->10
+
+Output:
+
+File Table:
+
+Heap:
+1->22
+
+-------------------------------
+Prog State - 130: 
+Exe stack:
+wh(a,30)
+( v = 32; ( print(v) ; print(rH(a)) ))
+
+Symbol Table:
+a-->1
+v-->10
+
+Output:
+
+File Table:
+
+Heap:
+1->22
+
+-------------------------------
+Prog State - 13: 
+Exe stack:
+print(rH(a)) 
+
+Symbol Table:
+a-->1
+v-->10
+
+Output:
+10
+
+File Table:
+
+Heap:
+1->30
+
+-------------------------------
+Prog State - 130: 
+Exe stack:
+( v = 32; ( print(v) ; print(rH(a)) ))
+
+Symbol Table:
+a-->1
+v-->10
+
+Output:
+10
+
+File Table:
+
+Heap:
+1->30
+
+-------------------------------
+Prog State - 13: 
+Exe stack:
+
+Symbol Table:
+a-->1
+v-->10
+
+Output:
+10
+30
+
+File Table:
+
+Heap:
+1->30
+
+-------------------------------
+Prog State - 130: 
+Exe stack:
+v = 32
+( print(v) ; print(rH(a)) )
+
+Symbol Table:
+a-->1
+v-->10
+
+Output:
+10
+30
+
+File Table:
+
+Heap:
+1->30
+
+-------------------------------
+Prog State - 130: 
+Exe stack:
+( print(v) ; print(rH(a)) )
+
+Symbol Table:
+a-->1
+v-->32
+
+Output:
+10
+30
+
+File Table:
+
+Heap:
+1->30
+
+-------------------------------
+Prog State - 130: 
+Exe stack:
+print(v) 
+print(rH(a)) 
+
+Symbol Table:
+a-->1
+v-->32
+
+Output:
+10
+30
+
+File Table:
+
+Heap:
+1->30
+
+-------------------------------
+Prog State - 130: 
+Exe stack:
+print(rH(a)) 
+
+Symbol Table:
+a-->1
+v-->32
+
+Output:
+10
+30
+32
+
+File Table:
+
+Heap:
+1->30
+
+-------------------------------
+Prog State - 130: 
+Exe stack:
+
+Symbol Table:
+a-->1
+v-->32
+
+Output:
+10
+30
+32
+30
+
+File Table:
+
+Heap:
+1->30
+

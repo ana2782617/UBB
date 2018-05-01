@@ -1,0 +1,166 @@
+-------------------------------
+Exe stack:
+openRfile( var_f, test.in) 
+( readFile( var_f, var_c) ; ( print(var_c) ; ( if (var_c) then (( readFile( var_f, var_c) ; print(var_c) )) else (print(0) ); closeRfile(var_f) )))
+
+Symbol Table:
+
+Output:
+
+File Table:
+
+-------------------------------
+Exe stack:
+( readFile( var_f, var_c) ; ( print(var_c) ; ( if (var_c) then (( readFile( var_f, var_c) ; print(var_c) )) else (print(0) ); closeRfile(var_f) )))
+
+Symbol Table:
+var_f-->0
+
+Output:
+
+File Table:
+0-->test.in
+
+-------------------------------
+Exe stack:
+readFile( var_f, var_c) 
+( print(var_c) ; ( if (var_c) then (( readFile( var_f, var_c) ; print(var_c) )) else (print(0) ); closeRfile(var_f) ))
+
+Symbol Table:
+var_f-->0
+
+Output:
+
+File Table:
+0-->test.in
+
+-------------------------------
+Exe stack:
+( print(var_c) ; ( if (var_c) then (( readFile( var_f, var_c) ; print(var_c) )) else (print(0) ); closeRfile(var_f) ))
+
+Symbol Table:
+var_f-->0
+var_c-->1
+
+Output:
+
+File Table:
+0-->test.in
+
+-------------------------------
+Exe stack:
+print(var_c) 
+( if (var_c) then (( readFile( var_f, var_c) ; print(var_c) )) else (print(0) ); closeRfile(var_f) )
+
+Symbol Table:
+var_f-->0
+var_c-->1
+
+Output:
+
+File Table:
+0-->test.in
+
+-------------------------------
+Exe stack:
+( if (var_c) then (( readFile( var_f, var_c) ; print(var_c) )) else (print(0) ); closeRfile(var_f) )
+
+Symbol Table:
+var_f-->0
+var_c-->1
+
+Output:
+1
+
+File Table:
+0-->test.in
+
+-------------------------------
+Exe stack:
+if (var_c) then (( readFile( var_f, var_c) ; print(var_c) )) else (print(0) )
+closeRfile(var_f) 
+
+Symbol Table:
+var_f-->0
+var_c-->1
+
+Output:
+1
+
+File Table:
+0-->test.in
+
+-------------------------------
+Exe stack:
+( readFile( var_f, var_c) ; print(var_c) )
+closeRfile(var_f) 
+
+Symbol Table:
+var_f-->0
+var_c-->1
+
+Output:
+1
+
+File Table:
+0-->test.in
+
+-------------------------------
+Exe stack:
+readFile( var_f, var_c) 
+print(var_c) 
+closeRfile(var_f) 
+
+Symbol Table:
+var_f-->0
+var_c-->1
+
+Output:
+1
+
+File Table:
+0-->test.in
+
+-------------------------------
+Exe stack:
+print(var_c) 
+closeRfile(var_f) 
+
+Symbol Table:
+var_f-->0
+var_c-->2
+
+Output:
+1
+
+File Table:
+0-->test.in
+
+-------------------------------
+Exe stack:
+closeRfile(var_f) 
+
+Symbol Table:
+var_f-->0
+var_c-->2
+
+Output:
+1
+2
+
+File Table:
+0-->test.in
+
+-------------------------------
+Exe stack:
+
+Symbol Table:
+var_f-->0
+var_c-->2
+
+Output:
+1
+2
+
+File Table:
+

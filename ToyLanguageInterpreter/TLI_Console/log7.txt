@@ -1,0 +1,108 @@
+-------------------------------
+Prog State - 7: 
+Exe stack:
+v = 10
+( new(v, 20); ( new(a, 22); print(v) ))
+
+Symbol Table:
+
+Output:
+
+File Table:
+
+Heap:
+
+-------------------------------
+Prog State - 7: 
+Exe stack:
+( new(v, 20); ( new(a, 22); print(v) ))
+
+Symbol Table:
+v-->10
+
+Output:
+
+File Table:
+
+Heap:
+
+-------------------------------
+Prog State - 7: 
+Exe stack:
+new(v, 20)
+( new(a, 22); print(v) )
+
+Symbol Table:
+v-->10
+
+Output:
+
+File Table:
+
+Heap:
+
+-------------------------------
+Prog State - 7: 
+Exe stack:
+( new(a, 22); print(v) )
+
+Symbol Table:
+v-->1
+
+Output:
+
+File Table:
+
+Heap:
+1->20
+
+-------------------------------
+Prog State - 7: 
+Exe stack:
+new(a, 22)
+print(v) 
+
+Symbol Table:
+v-->1
+
+Output:
+
+File Table:
+
+Heap:
+1->20
+
+-------------------------------
+Prog State - 7: 
+Exe stack:
+print(v) 
+
+Symbol Table:
+a-->2
+v-->1
+
+Output:
+
+File Table:
+
+Heap:
+1->20
+2->22
+
+-------------------------------
+Prog State - 7: 
+Exe stack:
+
+Symbol Table:
+a-->2
+v-->1
+
+Output:
+1
+
+File Table:
+
+Heap:
+1->20
+2->22
+

@@ -1,0 +1,66 @@
+-------------------------------
+Prog State - 3: 
+Exe stack:
+a = 3/0
+( if (a) then (v = 2) else (v = 3); print(v) )
+
+Symbol Table:
+
+Output:
+
+File Table:
+
+Heap:
+
+-------------------------------
+Prog State - 3: 
+Exe stack:
+( if (a) then (v = 2) else (v = 3); print(v) )
+
+Symbol Table:
+
+Output:
+
+File Table:
+
+Heap:
+
+-------------------------------
+Prog State - 3: 
+Exe stack:
+if (a) then (v = 2) else (v = 3)
+print(v) 
+
+Symbol Table:
+
+Output:
+
+File Table:
+
+Heap:
+
+-------------------------------
+Prog State - 3: 
+Exe stack:
+print(v) 
+
+Symbol Table:
+
+Output:
+
+File Table:
+
+Heap:
+
+-------------------------------
+Prog State - 3: 
+Exe stack:
+
+Symbol Table:
+
+Output:
+
+File Table:
+
+Heap:
+

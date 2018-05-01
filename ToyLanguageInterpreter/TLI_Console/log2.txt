@@ -1,0 +1,73 @@
+-------------------------------
+Prog State - 2: 
+Exe stack:
+a = 2+3*5
+( b = a+1; print(b) )
+
+Symbol Table:
+
+Output:
+
+File Table:
+
+Heap:
+
+-------------------------------
+Prog State - 2: 
+Exe stack:
+( b = a+1; print(b) )
+
+Symbol Table:
+a-->17
+
+Output:
+
+File Table:
+
+Heap:
+
+-------------------------------
+Prog State - 2: 
+Exe stack:
+b = a+1
+print(b) 
+
+Symbol Table:
+a-->17
+
+Output:
+
+File Table:
+
+Heap:
+
+-------------------------------
+Prog State - 2: 
+Exe stack:
+print(b) 
+
+Symbol Table:
+a-->17
+b-->18
+
+Output:
+
+File Table:
+
+Heap:
+
+-------------------------------
+Prog State - 2: 
+Exe stack:
+
+Symbol Table:
+a-->17
+b-->18
+
+Output:
+18
+
+File Table:
+
+Heap:
+
